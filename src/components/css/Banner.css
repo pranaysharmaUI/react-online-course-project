@@ -1,0 +1,7 @@
+.banner-container
+{
+    padding: 3rem 0px;
+    text-align: center;
+    background-color: var(--lighter-gray);
+    color: var(--brand-color-2);
+}

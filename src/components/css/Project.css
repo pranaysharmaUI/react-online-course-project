@@ -1,0 +1,57 @@
+.project-container
+{
+    display: flex;
+    flex: 1;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+ .project-container > div
+{
+    flex: 0 0 31%;
+    background-color: var(--color-white);
+}
+
+.project-box
+{
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+
+}
+
+.project-box .project-box-image
+{
+    background-color: var(--lighter-gray);
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--card-radius);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.project-box .project-box-image img
+{
+    max-width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--card-radius);
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.project-box .project-box-content
+{
+    padding: 2.5rem 1rem;
+}
+.project-box .project-box-content h3{
+    color: var(--brand-color-2);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.project-box .project-box-content p{
+    text-align: left;
+}
+.project-box-label
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}

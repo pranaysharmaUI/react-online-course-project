@@ -1,0 +1,8 @@
+.container-section
+{
+    padding: 3rem 1.5rem;
+}
+.container-section > h2
+{
+    margin-bottom: 1.5rem;
+}

@@ -1,0 +1,29 @@
+.sidebar-filter-container
+{
+    flex: 0 0 200px;
+}
+.sidebar-filter-heading > *
+{
+    color: var(--brand-color-1);
+    font-family: var(--heading-font);
+}
+.sidebar-filter-list
+{
+    list-style: none;
+    padding: 0px;
+}
+.sidebar-filter-list li{
+    background-color: var(--lighter-gray);
+    color: var(--color-black);
+    padding: 1rem;
+    border-bottom: 1px solid var(--brand-color-2);
+    cursor: pointer;
+}
+.sidebar-filter-list li:hover, .sidebar-filter-list li.active
+{
+   background-color: var(--brand-color-1);
+}
+.filter-box
+{
+    margin-top: 1rem;
+}

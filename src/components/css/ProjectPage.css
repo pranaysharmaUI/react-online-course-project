@@ -1,0 +1,6 @@
+.projects-section
+{
+    display: flex;
+    margin-top: 3rem;
+    gap: 20px;
+}
