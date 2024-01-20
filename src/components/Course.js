@@ -15,7 +15,7 @@ function Course({data})
                 <div className='course-box-info'>
                     <p>Duration: {data.duration}hrs</p>
                     <span className='detail-link'>
-                    <Link to="/" >More Detail</Link>
+                    <Link to={`/courses/:${data.id}`} state={data}>More Detail</Link>
                     </span>
                 </div>
 

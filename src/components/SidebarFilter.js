@@ -8,13 +8,13 @@ function SidebarFilter ({ list, filter, setFilter }) {
       </div>
       <div className='sidebar-filter-list'>
         {list.length > 0
-          ? list.map(item => (
-              <div className='filter-box'>
+          ? list.map((item,index) => (
+              <div key={index} className='filter-box'>
                 <span>{item.type}</span>
                 <ul className='sidebar-filter-list'>
                   {item.filter.length > 0
-                    ? item.filter.map(filterName => (
-                        <li
+                    ? item.filter.map((filterName,index) => (
+                        <li key={filterName}
                           onClick={() => {
                             setFilter({type:item.type,name:filterName})
                           }}

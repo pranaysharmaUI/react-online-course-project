@@ -1,0 +1,24 @@
+.course-detail-main
+{
+    display: flex;
+    gap: 20px;
+}
+.course-detail-main > div
+{
+    flex: 1;
+    min-height: 50vh;
+}
+.course-detail-main .course-detail-image
+{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.course-detail-image img
+{
+    width: 100%;
+}
+.course-detail-content
+{
+    padding-top: 1rem;
+}
