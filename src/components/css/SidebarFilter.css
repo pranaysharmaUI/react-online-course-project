@@ -22,6 +22,8 @@
 .sidebar-filter-list li:hover, .sidebar-filter-list li.active
 {
    background-color: var(--brand-color-1);
+   color: #fff;
+   border-bottom-color: #fff;
 }
 .filter-box
 {
