@@ -1,12 +1,14 @@
 .course-container
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 25px;
+    flex-wrap: wrap;
+    flex: 1;
 }
 .course-container > div
 {
-    flex: 1 0 300px;
+    flex: 0 0 31%;
     background-color: var(--color-white);
 }
 

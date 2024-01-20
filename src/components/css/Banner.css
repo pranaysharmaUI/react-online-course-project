@@ -5,3 +5,13 @@
     background-color: var(--lighter-gray);
     color: var(--brand-color-2);
 }
+.banner-container.image
+{
+    padding: 0px;
+}
+.banner-container > img
+{
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}

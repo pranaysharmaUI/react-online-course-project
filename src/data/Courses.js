@@ -2,6 +2,8 @@ import  Next from '../assets/img/nextjs-project.jpg';
 import React from '../assets/img/react.jpg';
 import JS from '../assets/img/javascript.jpg';
 import Node from '../assets/img/nodejs.jpg';
+import Mern from '../assets/img/mern-project.jpg';
+import HTML from '../assets/img/html.jpg';
 
 
 export const courseData=[
@@ -11,7 +13,8 @@ export const courseData=[
         description:'A course giving introductory knowledge about nextjs and openAI',
         duration:'7',
         technologies:['NextJS','OpenAI'],
-        img:Next
+        img:Next,
+        experience:'Intermediate'
     },
     {
         id:2,
@@ -19,7 +22,8 @@ export const courseData=[
         description:'A course giving introductory knowledge about javascript',
         duration:'7',
         technologies:['Javascript'],
-        img:JS
+        img:JS,
+        experience:'Beginner'
     },
     {
         id:3,
@@ -27,7 +31,8 @@ export const courseData=[
         description:'A course giving introductory knowledge about react and javascript',
         duration:'7',
         technologies:['React','Javascript'],
-        img:React
+        img:React,
+        experience:'Beginner'
     },
     {
         id:4,
@@ -35,6 +40,25 @@ export const courseData=[
         description:'A course giving introductory knowledge about NodeJS',
         duration:'7',
         technologies:['NodeJS','Javascript'],
-        img:Node
+        img:Node,
+        experience:'Intermediate'
+    },
+    {
+        id:5,
+        title:'Mern Course',
+        description:'A course giving msstergy knowledge about Mern Stack',
+        duration:'12',
+        technologies:['NodeJS','Javascript','MongoDB','React'],
+        img:Mern,
+        experience:'Advance'
+    },
+    {
+        id:6,
+        title:'HTML5 Course',
+        description:'A course giving introductory knowledge about HTML5, CSS3, and javascript',
+        duration:'12',
+        technologies:['HTML5','Javascript','CSS3'],
+        img:HTML,
+        experience:'Beginner'
     }
 ]
