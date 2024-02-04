@@ -14,7 +14,8 @@ export const courseData=[
         duration:'7',
         technologies:['NextJS','OpenAI'],
         img:Next,
-        experience:'Intermediate'
+        experience:'Intermediate',
+        type:'course'
     },
     {
         id:2,
@@ -23,7 +24,8 @@ export const courseData=[
         duration:'7',
         technologies:['Javascript'],
         img:JS,
-        experience:'Beginner'
+        experience:'Beginner',
+        type:'course'
     },
     {
         id:3,
@@ -32,7 +34,8 @@ export const courseData=[
         duration:'7',
         technologies:['React','Javascript'],
         img:React,
-        experience:'Beginner'
+        experience:'Beginner',
+        type:'course'
     },
     {
         id:4,
@@ -41,7 +44,8 @@ export const courseData=[
         duration:'7',
         technologies:['NodeJS','Javascript'],
         img:Node,
-        experience:'Intermediate'
+        experience:'Intermediate',
+        type:'course'
     },
     {
         id:5,
@@ -50,7 +54,8 @@ export const courseData=[
         duration:'12',
         technologies:['NodeJS','Javascript','MongoDB','React'],
         img:Mern,
-        experience:'Advance'
+        experience:'Advance',
+        type:'course'
     },
     {
         id:6,
@@ -59,6 +64,7 @@ export const courseData=[
         duration:'12',
         technologies:['HTML5','Javascript','CSS3'],
         img:HTML,
-        experience:'Beginner'
+        experience:'Beginner',
+        type:'course'
     }
 ]

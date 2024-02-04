@@ -16,7 +16,8 @@
 }
 .course-detail-image img
 {
-    width: 100%;
+    width: auto;
+    max-width: 100%;
 }
 .course-detail-content
 {

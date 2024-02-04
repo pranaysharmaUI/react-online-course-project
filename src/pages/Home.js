@@ -7,7 +7,7 @@ import Course from '../components/Course'
 import Project from '../components/Project'
 
 function Home (props) {
-  const { projects, courses } = useContext(AppContext)
+  const { projects, courses } = useContext(AppContext);
 
   return (
     <div className='container'>

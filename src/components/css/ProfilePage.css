@@ -1,0 +1,23 @@
+.profile-main-container
+{
+    display: flex;
+    margin-top: 1.5rem;
+    gap: 1rem;
+
+}
+.routes-sidebar
+{
+    flex: 0 0 300px;
+}
+.profile-component-container
+{
+    flex: 1;
+    padding-right: 1rem;
+}
+.wishlist-container
+{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}

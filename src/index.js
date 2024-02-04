@@ -9,7 +9,7 @@ import { projectData } from './data/Projects';
 
 var obj={
   courses:courseData,
-  projects:projectData
+  projects:projectData,
 }
 
 
