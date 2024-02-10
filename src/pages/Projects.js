@@ -16,7 +16,6 @@ function Projects (props) {
   const [filterData, setFilterData] = useState(data)
 
   useEffect(() => {
-    console.log(filter);
     if (filter.name === 'all') {
       setFilterData(data)
     } else {

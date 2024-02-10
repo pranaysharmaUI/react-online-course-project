@@ -1,0 +1,44 @@
+.tab-container
+{
+    padding: 1rem;
+
+}
+.tab-header
+{
+
+}
+.tab-header ul
+{
+    display: flex;
+    border-bottom: 1px solid var(--lighter-gray);
+    list-style: none;
+    padding: 0px;
+    gap: 10px;
+}
+.tab-header ul li
+{
+    color: var(--lighter-gray);
+    padding: 15px 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.tab-header ul li.active
+{
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+.tab-content
+{
+    display: none;
+}
+.tab-content.active
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.tab-content > div{
+    flex: 0 0 24%;
+}

@@ -5,6 +5,7 @@ import Banner from '../assets/img/banner-2.jpg'
 import ComponentSection from '../components/ComponentSection'
 import Course from '../components/Course'
 import Project from '../components/Project'
+import CategoryTabs from '../components/CategoryTabs'
 
 function Home (props) {
   const { projects, courses } = useContext(AppContext);
@@ -12,6 +13,7 @@ function Home (props) {
   return (
     <div className='container'>
       <ImageBanner img={Banner} />
+      <CategoryTabs data={courses} />
       <ComponentSection title='Courses' className="courses-section">
         <div className='course-container'>
           {courses.length > 0

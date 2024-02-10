@@ -4,6 +4,8 @@ import JS from '../assets/img/javascript.jpg';
 import Node from '../assets/img/nodejs.jpg';
 import Mern from '../assets/img/mern-project.jpg';
 import HTML from '../assets/img/html.jpg';
+import DataAnalytics from '../assets/img/data-analytics-with-python.jpg';
+import Adobe from '../assets/img/adobe-tools.jpg';
 
 
 export const courseData=[
@@ -12,6 +14,7 @@ export const courseData=[
         title:'NextJs and OpenAI',
         description:'A course giving introductory knowledge about nextjs and openAI',
         duration:'7',
+        category:'programming',
         technologies:['NextJS','OpenAI'],
         img:Next,
         experience:'Intermediate',
@@ -25,6 +28,7 @@ export const courseData=[
         technologies:['Javascript'],
         img:JS,
         experience:'Beginner',
+        category:'programming',
         type:'course'
     },
     {
@@ -35,6 +39,7 @@ export const courseData=[
         technologies:['React','Javascript'],
         img:React,
         experience:'Beginner',
+        category:'programming',
         type:'course'
     },
     {
@@ -45,6 +50,7 @@ export const courseData=[
         technologies:['NodeJS','Javascript'],
         img:Node,
         experience:'Intermediate',
+        category:'programming',
         type:'course'
     },
     {
@@ -55,7 +61,8 @@ export const courseData=[
         technologies:['NodeJS','Javascript','MongoDB','React'],
         img:Mern,
         experience:'Advance',
-        type:'course'
+        type:'course',
+        category:'programming'
     },
     {
         id:6,
@@ -65,6 +72,29 @@ export const courseData=[
         technologies:['HTML5','Javascript','CSS3'],
         img:HTML,
         experience:'Beginner',
+        category:'programming',
+        type:'course'
+    },
+    {
+        id:7,
+        title:'Adobe tools Course',
+        description:'A course giving introductory knowledge about photoshop, illustrator',
+        duration:'12',
+        technologies:['Adobe Phototshop','Adobe Illustrator'],
+        img:Adobe,
+        experience:'Beginner',
+        category:'Graphic Design',
+        type:'course'
+    },
+    {
+        id:8,
+        title:'Data analytics Course',
+        description:'A course giving introductory knowledge about data analytics using python',
+        duration:'12',
+        technologies:['python'],
+        img:DataAnalytics,
+        experience:'Beginner',
+        category:'Data Analytics',
         type:'course'
     }
 ]

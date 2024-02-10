@@ -5,7 +5,6 @@ import WishlistComp from "./WishlistComp";
 function Wishlist(props)
 {
     const {wishlist,removeList} =useContext(WishlistContext);
-    console.log(wishlist);
     return(
         <div className="wishlist-container">
             {
