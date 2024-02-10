@@ -6,6 +6,7 @@ import ComponentSection from '../components/ComponentSection'
 import Course from '../components/Course'
 import Project from '../components/Project'
 import CategoryTabs from '../components/CategoryTabs'
+import ExperienceTabs from '../components/ExperienceTabs'
 
 function Home (props) {
   const { projects, courses } = useContext(AppContext);
@@ -14,6 +15,7 @@ function Home (props) {
     <div className='container'>
       <ImageBanner img={Banner} />
       <CategoryTabs data={courses} />
+      <ExperienceTabs data={projects} />
       <ComponentSection title='Courses' className="courses-section">
         <div className='course-container'>
           {courses.length > 0
