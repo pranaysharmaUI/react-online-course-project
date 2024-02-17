@@ -21,7 +21,11 @@
     cursor: pointer;
 
     a{
-        color: inherit;
+        background-color: var(--lighter-gray);
+        color: var(--color-black);
+        padding: 1rem;
+        border-bottom: 1px solid var(--brand-color-2);
+        cursor: pointer;
         text-decoration: none;
     }
 }
@@ -34,4 +38,30 @@
 .filter-box
 {
     margin-top: 1rem;
+}
+.filter-box > span
+{
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.sidebar-filter-list.info-list li
+{
+    padding: 0px;
+    border: none;
+
+}
+.sidebar-filter-list.info-list li a
+{
+    padding: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+.sidebar-filter-list.info-list li a.active
+{
+    background-color: var(--brand-color-1);
+    color: #fff; 
+    border-bottom-color: #fff;
 }

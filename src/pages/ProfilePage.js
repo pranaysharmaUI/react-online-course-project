@@ -9,9 +9,9 @@ function ProfilePage(props)
             <Banner title="Profile" />
             <div className="profile-main-container">
                 <div className="routes-sidebar">
-                    <ul className="sidebar-filter-list">
-                        <li><NavLink to="/profile">Info</NavLink></li>
-                        <li><NavLink to="/profile/wishlist">Wishlist</NavLink></li>
+                    <ul className="sidebar-filter-list info-list">
+                        <li><NavLink to="/profile" end>Info</NavLink></li>
+                        <li><NavLink to="/profile/wishlist" end>Wishlist</NavLink></li>
                     </ul>
 
                 </div>

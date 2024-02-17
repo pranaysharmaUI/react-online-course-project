@@ -1,12 +1,12 @@
 import './css/SidebarFilter.css'
 
-function SidebarFilter ({ list, filter, setFilter }) {
+function SidebarFilter ({ list, filter, setFilter,subClass }) {
   return (
     <div className='sidebar-filter-container'>
       <div className='sidebar-filter-heading'>
         <p>Filter</p>
       </div>
-      <div className='sidebar-filter-list'>
+      <div className={`sidebar-filter-list ${subClass}`}>
         {list.length > 0
           ? list.map((item,index) => (
               <div key={index} className='filter-box'>
