@@ -2,9 +2,21 @@ import '../components/css/CategoryTabs.css'
 import { useState } from 'react'
 import useExpertice from '../custom/useExpertice'
 import Project from './Project'
+import { useNavigate } from 'react-router-dom';
 function ExperienceTabs ({ data }) {
   const experience = useExpertice(data);
-  const [experienceActive, setExperienceActive] = useState(experience[0])
+  const [experienceActive, setExperienceActive] = useState(experience[0]);
+  const [searchText, setSearchText] = useState('');
+  const navigate=useNavigate();
+
+  const handleSearch = e => {
+    if (e.keyCode === 13) {
+      if (searchText) {
+        console.log(searchText);
+        navigate(`/projects/search/#${searchText}`);
+      }
+    }
+  }
 
   return (
     <div className='tab-container'>
@@ -26,6 +38,18 @@ function ExperienceTabs ({ data }) {
               })
             : null}
         </ul>
+        <input
+          type='text'
+          placeholder='Search Project'
+          onKeyDown={e => {
+            handleSearch(e)
+          }}
+          value={searchText}
+          onChange={e => {
+            setSearchText(e.target.value)
+          }}
+          className='searchProjectInput'
+        />
       </div>
       <div className='tab-content-container'>
         {experience && experience.length > 0

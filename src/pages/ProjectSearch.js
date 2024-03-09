@@ -1,16 +1,16 @@
 import { useLocation } from "react-router-dom";
 import Banner from "../components/Banner";
-import {useCourseSearch} from "../custom/useSearch";
+import { useProjectSearch } from "../custom/useSearch";
 import '../components/css/DetailPage.css';
 
-function CourseSearch(props)
+function ProjectSearch(props)
 {
     const {hash}=useLocation();
     const searchText=decodeURIComponent(hash ? hash.split('#')[1] : '');
-    const searchItem=useCourseSearch(searchText);
+    const searchItem=useProjectSearch(searchText);
     return(
         <div className="course-detail-container">
-            <Banner title="Course Search"/>
+            <Banner title="Project Search"/>
             <div className="search-container">
                 {
                     searchItem === '' ? <p>No results found</p> : searchItem
@@ -21,4 +21,4 @@ function CourseSearch(props)
 }
 
 
-export default CourseSearch;
+export default ProjectSearch;

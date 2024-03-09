@@ -33,6 +33,10 @@ h1,h2,h3,h4,p{
   border: none;
   border-radius: var(--card-radius);
 }
+.btn a{
+  color: inherit;
+  text-decoration: none;
+}
 .btn.btn-primary
 {
   background-color: var(--lighter-gray);

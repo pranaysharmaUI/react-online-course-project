@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/Project.css';
 
 function Project({data})
@@ -15,9 +16,11 @@ function Project({data})
             </div>
             <div className='project-box-label'>
             <button type='button' className='btn btn-primary'>
+                <Link to={`/projects/search/#${data.experience}`}>
                 {
                     data.experience
                 }
+                </Link>
             </button>
             </div>
         </div>

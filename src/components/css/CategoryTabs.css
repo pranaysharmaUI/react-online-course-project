@@ -3,9 +3,17 @@
     padding: 1rem;
 
 }
-.tab-header
+.tab-header 
 {
+    display: flex;
+    margin-bottom: 1rem;
 
+}
+.tab-header input
+{
+    flex: 0 0 300px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 .tab-header ul
 {
@@ -13,7 +21,9 @@
     border-bottom: 1px solid var(--lighter-gray);
     list-style: none;
     padding: 0px;
+    margin: 0px;
     gap: 10px;
+    flex: 1;
 }
 .tab-header ul li
 {

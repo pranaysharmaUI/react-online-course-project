@@ -23,7 +23,7 @@ function CourseDetail(props)
                         technologies.length > 0 ?
                         technologies.map((item,index) =>
                         {
-                            return(<li key={index}><Link to={`/courses/search/?q=${item}`}>{item}</Link></li>)
+                            return(<li key={index}><Link to={`/courses/search/#${item}`}>{item}</Link></li>)
                         })
                         : null
                     }

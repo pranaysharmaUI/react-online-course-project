@@ -7,6 +7,7 @@ import {WishlistProvider} from './context/WishlistContext'
 import useLazy from './custom/useLazy'
 import GoalContext from './context/GoalContext'
 import CourseSearch from './pages/CourseSearch'
+import ProjectSearch from './pages/ProjectSearch'
 const Info=lazy(() => import('./components/Info'));
 const Wishlist=lazy(() => import('./components/Wishlist'));
 const ProfilePage=lazy(() => import('./pages/ProfilePage'));
@@ -49,6 +50,7 @@ function App () {
             <Route path='/courses/:id' element={useLazy(<CourseDetail />)} />
             <Route path="/courses/search/" element={<CourseSearch />} />
             <Route path='/projects' element={useLazy(<Projects />)} />
+            <Route path="/projects/search" element={<ProjectSearch />} />
             <Route path=':/projects/:id' element={useLazy(<ProjectDetail />)} />
             <Route path='/profile' element={useLazy(<ProfilePage />)} >
               <Route element={useLazy(<Info />)} index />
