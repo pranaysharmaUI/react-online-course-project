@@ -1,6 +1,6 @@
 import '../components/css/DetailPage.css';
 import Banner from "../components/Banner";
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function CourseDetail(props)
 {
@@ -23,7 +23,7 @@ function CourseDetail(props)
                         technologies.length > 0 ?
                         technologies.map((item,index) =>
                         {
-                            return(<li key={index}>{item}</li>)
+                            return(<li key={index}><Link to={`/courses/search/?q=${item}`}>{item}</Link></li>)
                         })
                         : null
                     }

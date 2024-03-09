@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 import './css/Course.css'
-import { useContext } from 'react'
-import WishlistContext from '../context/WishlistContext'
+import { useWishlistContext } from '../context/WishlistContext'
 import useWishlist from '../custom/useWishlist'
 
 function Course ({ data }) {
@@ -35,7 +34,7 @@ export default Course
 
 function HeartIcon({status,data})
 {
-    const {setList,removeList}=useContext(WishlistContext);
+    const {setList,removeList}=useWishlistContext();
     return(
         <object className={status === true ? 'active' :''} onClick={() =>  {
             if(status === false)

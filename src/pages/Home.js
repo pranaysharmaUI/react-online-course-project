@@ -1,15 +1,15 @@
-import { useContext } from 'react'
-import AppContext from '../context/AppContext'
+import { Suspense, lazy } from 'react'
+import { useAppContext } from '../context/AppContext'
 import ImageBanner from '../components/ImageBanner'
 import Banner from '../assets/img/banner-2.jpg'
 import ComponentSection from '../components/ComponentSection'
-import Course from '../components/Course'
-import Project from '../components/Project'
 import CategoryTabs from '../components/CategoryTabs'
 import ExperienceTabs from '../components/ExperienceTabs'
+const Course=lazy(() => import('../components/Course'));
+const Project=lazy(() => import('../components/Project'));
 
 function Home (props) {
-  const { projects, courses } = useContext(AppContext);
+  const { projects, courses } = useAppContext();
 
   return (
     <div className='container'>
@@ -21,7 +21,7 @@ function Home (props) {
           {courses.length > 0
             ? courses.map((item, index) => {
                 if (item.id < 4) {
-                  return <Course key={item.id} data={item} />
+                  return <Suspense fallback="Loading..."><Course key={item.id} data={item} /></Suspense>
                 }
                 return <></>
               })
@@ -33,7 +33,7 @@ function Home (props) {
           {projects.length > 0
             ? projects.map((item, index) => {
                 if (item.id < 4) {
-                  return <Project key={item.id} data={item} />
+                  return <Suspense fallback="Loading..."><Project key={item.id} data={item} /></Suspense>
                 }
                 return <></>
               })

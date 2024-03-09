@@ -1,13 +1,15 @@
-import { useContext, useEffect, useState } from 'react'
-import AppContext from '../context/AppContext'
+import { Suspense, lazy, useEffect, useState } from 'react'
+import { useAppContext } from '../context/AppContext'
 import Banner from '../components/Banner'
 import ComponentSection from '../components/ComponentSection'
-import Project from '../components/Project'
-import SidebarFilter from '../components/SidebarFilter'
 import '../components/css/ProjectPage.css'
+import useLazy from '../custom/useLazy'
+const SidebarFilter=lazy(() => import('../components/SidebarFilter'));
+const Project=lazy(() => import('../components/Project'));
+
 
 function Projects (props) {
-  const context = useContext(AppContext)
+  const context = useAppContext();
   //first take data from context
   //check which filter is there
   //based on the filter make filterData
@@ -44,24 +46,28 @@ function Projects (props) {
     <div className='container'>
       <Banner title='Projects' />
       <ComponentSection className='projects-section' title='All projects'>
-        <SidebarFilter
-          setFilter={setFilter}
-          filter={filter}
-          list={[
-            {
-              type: 'Technologies',
-              filter: ['all', 'React', 'Javascript', 'NodeJS', 'NextJS']
-            },
-            {
-              type: 'Level',
-              filter: ['Beginner', 'Intermediate', 'Advance']
-            }
-          ]}
-        />
+        
+        {
+          useLazy(<SidebarFilter
+            setFilter={setFilter}
+            filter={filter}
+            list={[
+              {
+                type: 'Technologies',
+                filter: ['all', 'React', 'Javascript', 'NodeJS', 'NextJS']
+              },
+              {
+                type: 'Level',
+                filter: ['Beginner', 'Intermediate', 'Advance']
+              }
+            ]}
+          />)
+        }
+
         <div className='project-container'>
           {filterData.length > 0
             ? filterData.map((item, index) => (
-                <Project key={item.id} data={item} />
+                <Suspense fallback="Loading..."><Project key={item.id} data={item} /></Suspense>
               ))
             : null}
         </div>

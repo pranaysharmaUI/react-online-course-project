@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import WishlistContext from "../context/WishlistContext";
+
+import { useWishlistContext } from "../context/WishlistContext";
 import WishlistComp from "./WishlistComp";
 
 function Wishlist(props)
 {
-    const {wishlist,removeList} =useContext(WishlistContext);
+    const {wishlist,removeList} =useWishlistContext();
     return(
         <div className="wishlist-container">
             {

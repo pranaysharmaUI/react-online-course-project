@@ -1,9 +1,9 @@
-import { useContext } from "react";
-import WishlistContext from "../context/WishlistContext";
+
+import { useWishlistContext } from "../context/WishlistContext";
 
 function useWishlist(data)
 {
-    const {wishlist}=useContext(WishlistContext);
+    const {wishlist}=useWishlistContext();
     let status=false;
 
     wishlist.length > 0 ?
